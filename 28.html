@@ -3,18 +3,19 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <tatle>••Tere tulemast••</tatle>
+  <title>••Tere tulemast••</title> <!-- 1 -->
   <meta charset="utf-8">
-  <lunk rel="stylesheet" type="text/css" href="myStyle2.css">
+  <link rel="stylesheet" type="text/css" href="myStyle2.css"> <!-- 2 -->
 </head>
-<bady>
+
+<body> <!-- 3 -->
      
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
 
 <script
-  sorc="https://code.jquery.com/jquery-3.2.1.min.js"
+  src="https://code.jquery.com/jquery-3.2.1.min.js" 
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous"></script> <!-- 4 -->
   <script type="text/javascript">
 $(document).ready(function(){
   $(".run").click(function(){
@@ -25,7 +26,7 @@ $(document).ready(function(){
     .animate({top: "0"}, "fast")
     .slideUp()
     .slideDown("slow")
-    return fulse;
+    return false; <!-- 5 -->
   
   });
 });
@@ -37,7 +38,7 @@ if (element.src.match("blue"))
   element.src="gamora.gif";
   }
   <!--если же первая картинка, то на вторую -->
-eise
+else <!-- 6 -->
   {
   element.src="blue.gif";
   }
@@ -54,30 +55,26 @@ var lahti=true;
   }
   }
   function teade (){
-  olert("Заголовок убран");
+  alert("Заголовок убран"); <!-- 7 -->
   }
 </script>
   
   <table>
     <tr>
-    <td>
-    <p>Нажмите на изображение</p>
-    <imag id="myimage" onclick="changeImage()"
-    src="gamora.gif" width="245" height="200"> 
-
-    </td>
-      
-      <td>Полезные ссылки:</td>
-      <td>Работы</td>
+		<td>
+			<p>Нажмите на изображение</p>
+			<img id="myimage" onclick="changeImage()"
+			src="gamora.gif" width="245" height="200">  <!-- 8 -->
+		</td>
+		<td>Полезные ссылки:</td>
+		<td>Работы</td>
     </tr>
     <tr>
-      
-    </td>
-    <l><a href="#" class="run">Запустить</a></p>
-    <p><a href="#" class="but" id="nupp" onclick="$('h1#pealkiri').fadeOut(2000, teade);">Убрать заголовок</a></p>
- 
-  </td>
-  </tr>
+		</td>
+			<p><a href="#" class="run">Запустить</a></p> <!-- 9 -->
+			<p><a href="#" class="but" id="nupp" onclick="$('h1#pealkiri').fadeOut(2000, teade);">Убрать заголовок</a></p>
+		</td>
+	</tr>
   </table>
 
 </body>
